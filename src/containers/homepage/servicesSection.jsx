@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import { Marginer } from "../../components/marginer";
@@ -21,7 +21,7 @@ const ServicesContainer = styled(Element)`
   padding: 10px 0;
 `;
 
-export function ServicesSection(props) {
+export function ServicesSection() {
   return (
     <ServicesContainer name="servicesSection">
       <SectionTitle>Meilleur service de qualité</SectionTitle>

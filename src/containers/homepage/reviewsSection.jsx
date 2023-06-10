@@ -1,5 +1,5 @@
 import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
-import React from "react";
+// import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import { Marginer } from "../../components/marginer";
@@ -57,7 +57,7 @@ const StyledDotGroup = styled(DotGroup)`
   }
 `;
 
-export function ReviewsSection(props) {
+export function ReviewsSection() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
 
   return (

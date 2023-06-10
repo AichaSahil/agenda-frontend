@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import styled from "styled-components";
 import { Footer } from "../../components/footer/index";
 import { Marginer } from "../../components/marginer/index";
@@ -14,7 +14,7 @@ const PageContainer = styled.div`
   flex-direction: column;
 `;
 
-export function Homepage(props) {
+export function Homepage() {
   return (
     <PageContainer>
       <TopSection />

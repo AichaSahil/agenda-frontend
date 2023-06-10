@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Element, scroller } from "react-scroll";
 import styled from "styled-components";
 
@@ -8,6 +8,7 @@ import { DownArrow } from "../../components/downArrow";
 import { Logo } from "../../components/logo";
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
+import {Link} from "react-router-dom";
 
 const TopContainer = styled.div`
   width: 100%;
@@ -42,7 +43,7 @@ const DownArrowContainer = styled.div`
   transform: translateX(-50%);
 `;
 
-export function TopSection(props) {
+export function TopSection() {
   const scrollToNextSection = () => {
     scroller.scrollTo("servicesSection", { smooth: true, duration: 1500 });
   };
@@ -58,7 +59,8 @@ export function TopSection(props) {
           <MotivationalText>Rdv-AH</MotivationalText>
           <MotivationalText>Soyez prêt avec nous</MotivationalText>
           <Marginer direction="vertical" margin="2em" />
-          <Button>Inscription</Button>
+          <Link to="/inscription"  ><Button>Inscription</Button></Link>
+          
           <DownArrowContainer onClick={scrollToNextSection}>
             <DownArrow />
           </DownArrowContainer>

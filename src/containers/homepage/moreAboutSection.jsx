@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import { SectionTitle } from "../../components/sectionTitle";
@@ -44,7 +44,7 @@ const AboutImg = styled.img`
   }
 `;
 
-export function MoreAboutSection(props) {
+export function MoreAboutSection() {
   return (
     <MoreAboutContainer>
       <SectionTitle>En savoir plus sur Rdv-AH</SectionTitle>

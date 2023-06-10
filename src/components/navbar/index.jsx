@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from "../button";
 import { Logo } from "../logo";
 import { Marginer } from "../marginer";
+import {Link } from 'react-router-dom';
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -38,9 +39,9 @@ export function Navbar(props) {
         <Logo inline />
       </BrandContainer>
       <AccessibilityContainer>
-        <Button small>Connexion</Button>
+       <Link to="/connexion"> <Button small>Connexion</Button></Link>
         <Marginer direction="horizontal" margin="8px" />
-        <LoginButton small>Contact</LoginButton>
+        <Link to="/contact"><LoginButton small>Contact</LoginButton></Link>
       </AccessibilityContainer>
     </NavbarContainer>
   );
